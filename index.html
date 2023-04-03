@@ -1,66 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="noramlize.css">
+<html>
+  <head>
+    <title>Library App</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
-<body> 
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
     <header>
-        <h1 class="project-ttile">My Library</h1>
-        <p class="project subtitle">By John Walter</p>
+      <h1>A Simple Library</h1>
+      <p id="subHeading">With local storage. By John Walter</p>
     </header>
     <main>
-        <button class="new" type="button">New Book</button>
-        <div class="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Pages</th>
-                        <th>Read</th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <td>TitleData</td>
-                    <td>AuthorData</td>
-                    <td>PagesData</td>
-                    <td>ReadData</td>
-                    <td><button>Change read status</button></td>
-                    <td><button>Edit</button></td>
-                    <td><button>Delete</button></td>
-                </tbody>
-            </table>
-        </div>
-        <div class="form hidden">
-            <h2>Adding/Editing a book</h2>
-            <input type="text" id="title" placeholder="Title">
-            <input type="text" id="author" placeholder="Author">
-            <input type="number" id="pages" placeholder="Pages" min="0">
-            <fieldset role="radiogroup">
-              <legend>Read book?</legend>
-              <label for="yes">
-                <input type="radio" id="yes" name="read" value="yes" checked>
-                <span>Yes</span>
-              </label>
-              <label for="no">
-                <input type="radio" id="no" name="read" value="no">
-                <span>No</span>
-              </label>
-            </fieldset>
-            <div class="button-group">
-              <button id="submit">Submit</button>
-              <button id="return">Home</button>
-           </div>
-          </div>
-    </main>   
-</body>
+      <button class="new">Add a book</button>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Pages</th>
+              <th>Read</th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <td>TitleData</td>
+            <td>AuthorData</td>
+            <td>PagesData</td>
+            <td>ReadData</td>
+            <td><button>Change read status</button></td>
+            <td><button>Edit</button></td>
+            <td><button>Delete</button></td>
+          </tbody>
+        </table>
+      </div>
+      <div class="form hidden">
+        <h2>Adding/Editing a book</h2>
+        <input type="text" id="title" placeholder="Title">
+        <input type="text" id="author" placeholder="Author">
+        <input type="number" id="pages" placeholder="Pages" min="0">
+        <fieldset role="radiogroup">
+          <legend>Read book?</legend>
+          <label for="yes">
+            <input type="radio" id="yes" name="read" value="yes" checked>
+            <span>Yes</span>
+          </label>
+          <label for="no">
+            <input type="radio" id="no" name="read" value="no">
+            <span>No</span>
+          </label>
+        </fieldset>
+        <div class="button-group">
+          <button id="submit">Submit</button>
+          <button id="return">Return</button>
+       </div>
+      </div>
+    </main>
+  </body>
 </html>
